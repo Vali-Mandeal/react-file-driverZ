@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
 import { Modal, Button, Fade, Backdrop, Typography } from '@material-ui/core';
 import Styles from './UploadFile.Styles';
 
@@ -44,13 +43,13 @@ const UploadFile = ({
         );
       });
 
-      enhancedOnClose();
+    enhancedOnClose();
   };
 
   const enhancedOnClose = () => {
     onModalClose();
     setSelectedFile(null);
-  }
+  };
 
   return (
     <Modal
@@ -97,7 +96,6 @@ const UploadFile = ({
               <Typography variant='body2' gutterBottom>
                 Selected file: {selectedFileName}
               </Typography>
-
               <Button
                 className={classes.uploadButton}
                 onClick={() => {

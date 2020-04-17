@@ -1,7 +1,6 @@
 // library used: https://www.npmjs.com/package/react-file-viewer
 import React from 'react';
 import FileViewer from 'react-file-viewer';
-import axios from 'axios';
 
 import { makeStyles } from '@material-ui/core/styles';
 
